@@ -1,0 +1,5 @@
+{
+  "name": "LuxeWash Dubai",
+  "description": "Premium mobile car detailing service in Dubai offering exquisite care delivered to your doorstep.",
+  "requestFramePermissions": ["geolocation"]
+}

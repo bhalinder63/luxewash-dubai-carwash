@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-headline: "Manrope", sans-serif;
+
+  --color-primary: #00478d;
+  --color-primary-container: #005eb8;
+  --color-tertiary: #6a3d00;
+  --color-surface: #f7f9fc;
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #424752;
+  
+  --radius-full: 9999px;
+  --radius-xl: 1rem;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.signature-gradient {
+  background: linear-gradient(135deg, #00478d 0%, #005eb8 100%);
+}
+
+.glass-header {
+  @apply backdrop-blur-xl bg-white/80 sticky top-0 z-50;
+}
